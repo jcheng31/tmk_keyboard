@@ -175,8 +175,8 @@ enum function_id {
 
 static const uint16_t PROGMEM fn_actions[] = {
 	ACTION_LAYER_MOMENTARY(3), // Hold for Function Layer
-	ACTION_LAYER_INVERT(2, on), // Push to enable/disable Numpad Layer
-	ACTION_LAYER_INVERT(1, on), // Push to enable/disable QWERTY Layer
+	ACTION_LAYER_INVERT(2, ON_PRESS), // Push to enable/disable Numpad Layer
+	ACTION_LAYER_INVERT(1, ON_PRESS), // Push to enable/disable QWERTY Layer
 	ACTION_FUNCTION(TEENSY_KEY) // Teensy
 };
 
