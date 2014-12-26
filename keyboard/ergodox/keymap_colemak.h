@@ -77,7 +77,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		    LBRC, Y,   U,   I,   O,   P,   RBRC,
 		          H,   J,   K,   L,   SCLN,	  QUOT,
 		    FN0,  N,   M,   COMM,DOT, SLSH,   RSFT,
-		               LEFT,UP,  DOWN,RGHT,	  RGUI,
+		               LEFT,UP, DOWN, RGHT,	  RGUI,
 	    RALT, RCTL,
 	    PGUP,
 	    PGDN, ENT, SPC
@@ -134,7 +134,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
      * |        |      |      |      |      |      |------|           |------|      |      |      |      |      |        |
      * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
-     * |        |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
+     * |        |      |      |      |      |      | TRNS |           | TRNS |      |      |      |      |      |        |
      * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
      *   |      |      |      |      |      |                                       |Prev.T|VolDn |VolUp |Next T|      |
      *   `----------------------------------'                                       `----------------------------------'
@@ -151,7 +151,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	     NO, F1,  F2,  F3,  F4,  F5,  F6,
 	     NO, NO,  NO,  NO,  NO,  NO,  NO,
 	     NO, NO,  NO,  NO,  NO,  NO,
-	     NO, NO,  NO,  NO,  NO,  NO,  NO,
+	     NO, NO,  NO,  NO,  NO,  NO,  TRNS,
 	     NO, NO,  NO,  NO, NO,
 	                                  NO, NO,
 	                                      NO,
@@ -160,8 +160,8 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		     F7,  F8,  F9,  F10, F11, F12, NO,
 		     NO,  NO,  NO,  NO,  NO,  NO,  NO,
 		          NO,  NO,  NO,  NO,  NO,  NO,
-		     NO,  NO,  NO,  NO,  NO,  NO,  NO,
-		             MPRV, VOLU, VOLD, MNXT,  NO,
+		     TRNS,  NO,  NO,  NO,  NO,  NO,  NO,
+		             MPRV, VOLD, VOLU, MNXT,  NO,
 	    NO, NO,
 	    NO,
 	    NO, MUTE, MPLY
