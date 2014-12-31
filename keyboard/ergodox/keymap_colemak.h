@@ -134,12 +134,12 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
      * |        |      |      |      |      |      |------|           |------|      |      |      |      |      |        |
      * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
-     * |        |      |      |      |      |      | TRNS |           | TRNS |      |      |      |      |      |        |
+     * | TRNS   |      |      |      |      |      | TRNS |           | TRNS |      |      |      |      |      |    TRNS|
      * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
      *   |      |      |      |      |      |                                       |Prev.T|VolDn |VolUp |Next T|      |
      *   `----------------------------------'                                       `----------------------------------'
      *                                        ,-------------.       ,-------------.
-     *                                        |      |      |       |      |      |
+     *                                        | TRNS | TRNS |       | TRNS | TRNS |
      *                                 ,------|------|------|       |------+------+------.
      *                                 |      |      |      |       |      |      |      |
      *                                 |      |      |------|       |------| Mute | Play |
@@ -151,18 +151,18 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	     NO, F1,  F2,  F3,  F4,  F5,  F6,
 	     NO, NO,  NO,  NO,  NO,  NO,  NO,
 	     NO, NO,  NO,  NO,  NO,  NO,
-	     NO, NO,  NO,  NO,  NO,  NO,  TRNS,
+	     TRNS, NO,  NO,  NO,  NO,  NO,  TRNS,
 	     NO, NO,  NO,  NO, NO,
-	                                  NO, NO,
+	                                  TRNS, TRNS,
 	                                      NO,
 	                              NO, NO, NO,
 	    // Right Hand
 		     F7,  F8,  F9,  F10, F11, F12, NO,
 		     NO,  NO,  NO,  NO,  NO,  NO,  NO,
 		          NO,  NO,  NO,  NO,  NO,  NO,
-		     TRNS,  NO,  NO,  NO,  NO,  NO,  NO,
+		     TRNS,  NO,  NO,  NO,  NO,  NO,  TRNS,
 		             MPRV, VOLD, VOLU, MNXT,  NO,
-	    NO, NO,
+	    TRNS, TRNS,
 	    NO,
 	    NO, MUTE, MPLY
 	),
