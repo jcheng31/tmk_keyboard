@@ -16,7 +16,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *                                        | LCtrl| LAlt |       | RAlt |RCtrl |
      *                                 ,------|------|------|       |------+------+------.
      *                                 |      |      | Home |       | PgUp |      |      |
-     *                                 | BkSp | Tab  |------|       |------| Enter| Space|
+     *                                 | BkSp | Enter|------|       |------| Tab  | Space|
      *                                 |      |      |  End |       | PgDn |      |      |
      *                                 `--------------------'       `--------------------'
      */
@@ -29,7 +29,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	    LGUI,GRV, PSCR,DEL,CAPS,
 	                                  LCTL, LALT,
 	                                        HOME,
-	                             BSPC, TAB, END,
+	                             BSPC, ENT, END,
 	    // Right Hand
 		    FN1,  7,   8,   9,   0,   MINS,   EQL,
 		    LBRC, J,   L,   U,   Y,   SCLN,   RBRC,
@@ -38,7 +38,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		               LEFT,DOWN, UP, RGHT,	  RGUI,
 	    RALT, RCTL,
 	    PGUP,
-	    PGDN, ENT, SPC
+	    PGDN, TAB, SPC
 	),
 
      /* Layer 1: QWERTY (Gaming)
