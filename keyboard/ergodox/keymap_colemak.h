@@ -10,7 +10,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |--------+------+------+------+------+------| ~L3  |           | ~L3  |------+------+------+------+------+--------|
      * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   K  |   M  |   ,  |   .  |   /  | RShift |
      * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
-     *   | Caps |   `  |Pr.Scn| Del  | LGui |                                       | Left | Down |  Up  | Right| RGui |
+     *   | Caps |   `  | LAlt | Del  | LGui |                                       | Left | Down |  Up  | Right| RGui |
      *   `----------------------------------'                                       `----------------------------------'
      *                                        ,-------------.       ,-------------.
      *                                        | LCtrl| LAlt |       | RAlt |RCtrl |
@@ -26,7 +26,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	    BSLS,Q,   W,   F,   P,   G,   FN2,
 	    LCTL,A,   R,   S,   T,   D,
 	    LSFT,Z,   X,   C,   V,   B,   FN0,
-	    CAPS,GRV, PSCR,DEL,LGUI,
+	    CAPS,GRV, LALT,DEL,LGUI,
 	                                  LCTL, LALT,
 	                                        HOME,
 	                             BSPC, TAB, END,
@@ -52,7 +52,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |--------+------+------+------+------+------| ~L3  |           | ~L3  |------+------+------+------+------+--------|
      * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  | RShift |
      * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
-     *   | BkSp |   `  |Pr.Scn| Del  | LGui |                                       | Left | Down |  Up  | Right| RGui |
+     *   | BkSp |   `  | LAlt | Del  | LGui |                                       | Left | Down |  Up  | Right| RGui |
      *   `----------------------------------'                                       `----------------------------------'
      *                                        ,-------------.       ,-------------.
      *                                        | LCtrl| LAlt |       | RAlt |RCtrl |
@@ -68,7 +68,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	    BSLS,Q,   W,   E,   R,   T,   FN2,
 	    LCTL,A,   S,   D,   F,   G,
 	    LSFT,Z,   X,   C,   V,   B,   FN0,
-	    BSPC,GRV, PSCR,DEL, LGUI,
+	    BSPC,GRV, LALT,DEL, LGUI,
 	                                  LCTL,LALT,
 	                                       HOME,
 	                              SPC,TAB, END,
@@ -136,7 +136,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
      * | TRNS   |      |      |      |      |      | TRNS |           | TRNS |      |      |      |      |      |    TRNS|
      * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
-     *   |      |      |      |      |      |                                       |Prev.T|VolDn |VolUp |Next T|      |
+     *   |      |      |PrScn |      |      |                                       |Prev.T|VolDn |VolUp |Next T|      |
      *   `----------------------------------'                                       `----------------------------------'
      *                                        ,-------------.       ,-------------.
      *                                        | TRNS | TRNS |       | TRNS | TRNS |
@@ -152,7 +152,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	     NO, NO,  NO,  NO,  NO,  NO,  NO,
 	     TRNS, NO,  NO,  NO,  NO,  NO,
 	     TRNS, NO,  NO,  NO,  NO,  NO,  TRNS,
-	     NO, NO,  NO,  NO, NO,
+	     NO, NO, PSCR, NO, NO,
 	                                  TRNS, TRNS,
 	                                      NO,
 	                              NO, NO, NO,
