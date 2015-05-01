@@ -136,7 +136,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
      * | TRNS   |      |      |      |      |      | TRNS |           | TRNS |      |      |      |      |      |    TRNS|
      * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
-     *   |      |      |PrScn |      |      |                                       |Prev.T|VolDn |VolUp |Next T|      |
+     *   |      |      |PrScn |  Ins |      |                                       |Prev.T|VolDn |VolUp |Next T|      |
      *   `----------------------------------'                                       `----------------------------------'
      *                                        ,-------------.       ,-------------.
      *                                        | TRNS | TRNS |       | TRNS | TRNS |
@@ -152,7 +152,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	     NO, NO,  NO,  NO,  NO,  NO,  NO,
 	     TRNS, NO,  NO,  NO,  NO,  NO,
 	     TRNS, NO,  NO,  NO,  NO,  NO,  TRNS,
-	     NO, NO, PSCR, NO, NO,
+	     NO, NO, PSCR, INS, NO,
 	                                  TRNS, TRNS,
 	                                      NO,
 	                              NO, NO, NO,
